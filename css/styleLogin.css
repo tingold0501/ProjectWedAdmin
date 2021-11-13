@@ -1,0 +1,98 @@
+*{
+    padding: auto;
+    margin: auto;
+}
+body{
+    background-image: url("../ImagesAdmin/sunset-404072.png");
+    background-size: auto;
+    
+}
+.section-container-login
+{
+    padding-top: 100px;   
+}
+.container-login
+{
+    text-align: center;
+    background-color: #9D8EC4;
+    display: flex;
+    border-radius: 30px;
+    width: 750px;
+    height: 500px; 
+    opacity: 0.85;   
+}
+.container-login-left
+{
+    background-color: #F5F6FA;
+    border-radius: 30px;
+    width: 55%;
+    height: 100%;
+}
+.container-login-input input{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    border-style: hidden;
+    
+}
+.container-login-input{
+    padding-top: 20px;
+    height: 50px;
+    width: 250px;
+    border-style: hidden;
+}
+.container-login-text
+{
+    font-family: 'Roboto', sans-serif;
+    color:#9D8EC4 ;
+    text-align: center;
+    padding-top: 100px;
+}
+.container-login-text h3{
+    font-size: 40px;
+}
+.container-login-right{
+    width: 50%;
+    height: 85%;
+}
+.container-login-text-right{
+    padding: 0;
+    margin: 0;
+}
+.container-login a{
+    text-decoration: none;
+    color: #B2B2B2;
+    padding: 10px;
+    text-align: left;
+}
+.container-login a p{
+    padding-left: 75px;
+}
+.container-login-button button
+{
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    background-color:  #9D8EC4;
+    border-style: hidden;
+    color: #F5F6FA;
+}
+.container-login-button button:hover
+{
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    background-color:  #B2B2B2;;
+    border-style: hidden;
+    color: #F5F6FA;
+}
+.container-login-button{
+    border-radius: 20px;
+    width: 275px;
+    height: 50px;
+    padding-left: 20px;
+    
+}
+
+/* =======================LOGIN==================== */
