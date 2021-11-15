@@ -4,13 +4,15 @@
 }
 body{
     background-image: url("../ImagesAdmin/sunset-404072.png");
-    background-size: auto;
-    
 }
-.section-container-login
+.div-container-login
 {
-    padding-top: 100px;  
+    position: absolute;
+    background-position: center;
     display: flex;
+    height: 100%;
+    width: 100%;
+    opacity: 0.85; 
 }
 .container-login
 {
@@ -20,9 +22,7 @@ body{
     border-radius: 30px;
     width: 750px;
     height: 500px; 
-    opacity: 0.85;
     position: relative;
-    z-index: 1;   
 }
 .container-login-left
 {
@@ -30,24 +30,22 @@ body{
     border-radius: 30px;
     width: 55%;
     height: 100%;
+    position: absolute;
 }
 .container-login-input input{
     border-radius: 20px;
     height: 100%;
     width: 100%;
     padding-left: 20px;
-    border-style: hidden;
-    position: relative;    
+    border-style: hidden;   
 }
 .container-login-input input:focus{
     text-indent: 20px;
 }
 .container-login-input{
-    border-style: hidden;
     padding-top: 20px;
     height: 50px;
     width: 250px;
-    position: relative;
 }
 .container-login-text
 {
@@ -62,6 +60,7 @@ body{
 .container-login-right{
     width: 50%;
     height: 85%;
+    padding:40px 400px;
 }
 .container-login-text-right{
     padding: 0;
@@ -84,6 +83,7 @@ body{
     background-color:  #9D8EC4;
     border-style: hidden;
     color: #F5F6FA;
+    cursor: pointer;
 }
 .container-login-button button:hover
 {
@@ -108,8 +108,8 @@ body{
     border-radius: 20px;
     width: 750px;
     height: 500px;
-    z-index: 2;
-    /* visibility: hidden; */
+    /* position: relative; */
+    display: none;
 }
 .container-forgot-text h3{
     font-family: 'Roboto', sans-serif;
@@ -143,6 +143,8 @@ body{
     width: 73%;
     height: 50px;
     padding-left: 20px;
+    
+  
 }
 .container-forgot-button button{
     width: 100%;
@@ -153,6 +155,7 @@ body{
     color: #F5F6FA;
     padding: 10px;
     margin-top: 20px;
+    cursor: pointer;
 }
 .container-forgot-button button:hover{
     width: 100%;
@@ -172,6 +175,7 @@ body{
     border-radius: 20px;
     width: 750px;
     height: 500px;
+    display: none;
     /* visibility: hidden; */
 }
 .container-check-email-text h3{
@@ -203,6 +207,7 @@ body{
     color: #F5F6FA;
     padding: 10px;
     margin-top: 20px;
+    cursor: pointer;
 }
 .container-check-email-button button:hover{
     width: 100%;
