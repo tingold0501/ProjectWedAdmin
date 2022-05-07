@@ -5,11 +5,241 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styleSouthern.css">
+    <!-- <link rel="stylesheet" href="./css/styleSouthern.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <title>Admin-Southern</title>
 </head>
+<style>
+    *{
+    padding: auto;
+    margin: auto;
+}
+body{
+    background-image: url("../ImagesAdmin/sunset-404072.png");
+}
+.div-container-login
+{
+    position: absolute;
+    background-position: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    opacity: 0.85; 
+}
+.container-login
+{
+    text-align: center;
+    background-color: #9D8EC4;
+    display: flex;
+    border-radius: 30px;
+    width: 750px;
+    height: 500px; 
+    position: relative;
+}
+.container-login-left
+{
+    background-color: #F5F6FA;
+    border-radius: 30px;
+    width: 55%;
+    height: 100%;
+    position: absolute;
+}
+.container-login-input input{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    padding-left: 20px;
+    border-style: hidden;   
+    border: none;
+    outline: none;
+}
+.container-login-input input:focus{
+    text-indent: 20px;
+}
+.container-login-input{
+    padding-top: 20px;
+    height: 50px;
+    width: 250px;
+}
+.container-login-text
+{
+    font-family: 'Roboto', sans-serif;
+    color:#9D8EC4 ;
+    text-align: center;
+    padding-top: 100px;
+}
+.container-login-text h3{
+    font-size: 40px;
+}
+.container-login-right{
+    width: 50%;
+    height: 85%;
+    padding:40px 380px;
+}
+.container-login-text-right{
+    position: absolute;
+    width: 400px;
+    padding: 0;
+    margin: 0;
+}
+.container-login a{
+    text-decoration: none;
+    color: #B2B2B2;
+    padding: 10px;
+    text-align: left;
+}
+.container-login a p{
+    padding-left: 75px;
+}
+.container-login-button button
+{
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    background-color:  #9D8EC4;
+    border-style: hidden;
+    color: #F5F6FA;
+    cursor: pointer;
+}
+.container-login-button button:hover
+{
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    background-color:  #B2B2B2;;
+    border-style: hidden;
+    color: #F5F6FA;
+}
+.container-login-button{
+    border-radius: 20px;
+    width: 275px;
+    height: 50px;
+    padding-left: 20px;
+}
+/* =======================LOGIN==================== */
 
+.container-forgot{
+    background-color: #F5F6FA;
+    text-align: center;
+    border-radius: 20px;
+    width: 750px;
+    height: 500px;
+    /* position: relative; */
+    display: none;
+}
+.container-forgot-text h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color:  #9D8EC4;
+}
+.container-forgot-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #B2B2B2;
+}
+.container-forgot-text{
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.container-forgot-input{
+    width: 70%;
+    height: 50px;
+    padding-bottom: 40px;
+}
+.container-forgot-input input{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    border-radius: 20px;
+    border-style: hidden;
+    border: none;
+    outline: none;
+}
+.container-forgot-button{
+    padding-top: 20px;
+    border-radius: 20px;
+    width: 73%;
+    height: 50px;
+    padding-left: 20px;
+    
+  
+}
+.container-forgot-button button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color:  #9D8EC4;
+    border-style: hidden;
+    color: #F5F6FA;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.container-forgot-button button:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color:  #F5F6FA;
+    border-style: hidden;
+    color: #9D8EC4;
+    padding: 10px;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+/* =====================FORGOT EMAIL======================== */
+.container-check-email{
+    background-color: #F5F6FA;
+    text-align: center;
+    border-radius: 20px;
+    width: 750px;
+    height: 500px;
+    display: none;
+    /* visibility: hidden; */
+}
+.container-check-email-text h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color:  #9D8EC4;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.container-check-email-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #B2B2B2;
+    padding-bottom: 40px;
+}
+.container-check-email-button{
+    padding-top: 60px;
+    border-radius: 20px;
+    width: 73%;
+    height: 50px;
+    padding-left: 20px;
+}
+.container-check-email-button button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color:  #9D8EC4;
+    border-style: hidden;
+    color: #F5F6FA;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.container-check-email-button button:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color:  #F5F6FA;
+    border-style: hidden;
+    color: #9D8EC4;
+    padding: 10px;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+/* ========================CHECK EMAIL====================== */
+</style>
 <body>
     <section class="section-container">
         <div class="div-left">
